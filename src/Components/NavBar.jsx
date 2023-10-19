@@ -8,8 +8,8 @@ const NavBar = () => {
           <div className="text-white text-xl font-bold">CodePro</div>
 
           <ul className="flex space-x-4">
-            <li>
-              <a href="/" className='text-2xl hover:underline text-white px-5 hover:text-purple-600'>
+            <li>~
+            <a href="/" className='text-2xl hover:underline text-white px-5 hover:text-purple-600'>
                 Home
               </a>
             </li>
