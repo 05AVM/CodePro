@@ -1,11 +1,14 @@
+import "./index.css"; 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import "./App.css";
+import NavBar from './Components/NavBar';
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-java";
 import "ace-builds/src-noconflict/mode-csharp";
 import "ace-builds/src-noconflict/mode-python";
 import "ace-builds/src-noconflict/theme-dracula";
+
 
 function App() {
   const [code, setCode] = useState('');
@@ -56,11 +59,11 @@ function App() {
   }, [language])
   return (
     <div className="App" >
-      <h1>Code Compiler</h1>
+      <NavBar/>
       <div style={{ 'display': 'flex' }}>
         <div>
           <AceEditor
-            mode={C}
+            mode={mode}
             theme='dracula'
             setOptions={{
               enableBasicAutocompletion: true,
